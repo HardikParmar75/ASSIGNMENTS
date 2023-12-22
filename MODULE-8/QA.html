@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q1.What are the advantages of Bootstrap?<br>
+    ANS=Speed of development: Bootstrap provides predefined design templates and classes that can save time and effort.
+
+Responsiveness: Bootstrap enables the creation of websites that are compatible with different devices and screen sizes.
+
+Consistency: Bootstrap ensures that the design and layout of the website are uniform across browsers and platforms.
+
+Customizability: Bootstrap can be modified according to the needs and preferences of the project.
+
+Support: Bootstrap has a large and active community of developers and users who can provide help and feedback.
+<br>
+
+Q2.What is a Bootstrap Container, and how does it work? <br>
+ANS=Bootstrap Containers are the most basic layout element in Bootstrap. Bootstrap Containers are very essential and basic building blocks of bootstrap that wrap a page’s content. It’s responsible for setting and aligning content within it according to viewport or given device. Containers are defined within the container class (.container). In other words, we can say that containers are established the width for the layout to give the content. Elements and content are added within the container.
+
+  Containers are used for many purposes such as 
+
+ It requires use with the default grid system.
+To establish width for the layout to give web content.
+
+ To provide responsive fixed behavior of any web project.
+
+ To sets the content margin dealing with the responsive behavior of your layout.
+ <br>
+
+ Q3.What are the default Bootstrap text settings? <br>
+ ANS=
+ Font family: "Helvetica Neue", Helvetica, Arial, sans-serif.
+Font size: 16px for the body element in Bootstrap 4, and 1rem (16px by default) in Bootstrap 5.
+Font weight: Bold for headings in Bootstrap.
+Line-height: 1.5.
+Margin-top: 0 and margin-bottom: 1rem (16px by default) for all elements in Bootstrap 5.
+<br>
+
+Q4.What do you know about the Bootstrap Grid System? <br>
+ANS=Bootstrap's grid system allows up to 12 columns across the page.
+
+If you do not want to use all 12 column individually, you can group the columns together to create wider columns.
+<br>
+
+Q5.What is the difference between Bootstrap 4 and Bootstrap 5 <br>
+
+ANS=Main Differences Between Bootstrap 4 and Bootstrap 5
+Bootstrap 5 has several improvements and upgrades that Bootstrap 4 lacks, and some of these upgrades are discussed in this section:
+
+Extended color palette
+One of the limitations of Bootstrap 4 is that the color options are limited. However, on Bootstrap 5, there are more color options added to the color palette. This ensures that developer can choose from several available shades of color.
+
+adobe-color-wheel
+
+jQuery Deprecation
+jQuery has been used by Bootstrap as a dependency from the beginning to offer several dynamic features such as dropdowns ⮟, carousel 🎠, and menu ≡ expansion.
+However, many developers didn’t like the forced dependency on jQuery as they preferred to use Bootstrap alongside modern JavaScript frameworks like Vue.js and React. Therefore, Bootstrap 5 drops jQuery and removes the forced dependency.
+
+web frameworks
+
+However, it’s important to note that this doesn’t imply that Bootstrap 5 doesn’t have any JavaScript dependency. Several behaviors with Bootstrap 5, such as slider, drop-down, popover, etc., depending on Popper and its vanilla JavaScript module. While you’re not required to add jQuery, you’re still allowed to add it if you’re working on a project that depends on it.
+
+Floating Labels
+The Bootstrap 5 version also supports floating Labels for the input fields in forms. This means that you can use the form-floating class to ensure a floating label is enabled. After entering some values into the input fields, they automatically adjust their position to the floated area.
+
+<form class="form-floating">
+  <input type="email" class="form-control" id="floatingInputValue" placeholder="name@html-online.com" value="test@example.com">
+  <label for="floatingInputValue">Input with value</label>
+</form>
+Browser support
+Bootstrap 4 supported Internet Explorer 10 and 11. However, there’s no such support for Internet Explorer on Bootstrap 5. It’s understandable since Microsoft has moved its effort towards Edge browser. Edge now uses the open source chromium engine, so it has the modern CSS and JavaScript features that the latest versions of Firefox and Chrome have.
+
+old windows xp internet explorer
+
+Hence, the Bootstrap team dropped its support for Internet Explorer in the Bootstrap 5 version so that they can provide modern features, such as faster JavaScript, better APIs, and CSS variables.
+
+Bootstrap Icons
+The former Bootstrap version didn’t have a library for SVG icons. Developers had to settle for third-party libraries such as Font Awesome to enable them use icons. However, this issue has been handled in Bootstrap 5, with its SVG library having over 1000 icons. The latest version release of this icon library is also present in the web font version.
+
+( ͡~ ͜ʖ ͡°)   ✓ ✔ ⍻ 🗸 ✗ ✘ 𐄂 ❌ ❎
+
+RTL Support
+The RTL (Right-to-Left) support is also a new addition to Bootstrap 5. This allows you to develop the type of content that you need to write from the right-hand side of your page to the left-hand side. Consequently, it’s now easy to develop websites in certain languages such as Arabic, Urdu, Persian, Pashto and Sindhi. To write in these languages, you have to go from right to left on the page, hence it demands a specific style setting to accommodate your overall design.
+
+p.rtl {
+  direction: rtl;
+}
+With this new feature, the RTL versions of the Bootstrap CSS files can be used for creating RTL websites.
+
+Enhanced Grid System
+Bootstrap 5 retains the grid system, but enhances it by introducing an extra grid tier called xx1 to minimize the efforts needed to create responsive pages on higher resolution displays. The columns in version 5 lack the default relative position, and vertical spacing is addressed by adding classes. This means that it’ll require lesser effort to move grid structure between the old and the new version.
+
+Some popular changes in the grid system of Bootstrap 5 are:
+
+Introduction of xx1 grid tier.
+.g* utilities in grid adds gutter classes.
+Introduction of vertical spacing classes.
+The new grid system replaces the form layout options.
+Columns are relatibe by default and no longer positions. 
+Site Generation 
+Bootstrap 5 now uses Hugo for generating static sites instead of Jekyll (which it used previously). Hugo is faster and more popular as a site generator and can be implemented on Go.
+
+hugo fast website framework
+
+Placeholder Components
+With Bootstrap 5, it’s possible to load placeholders on the pages. This allows you to use the space meant for the components by putting placeholders in their stead while the actual content is still loading.
+
+…
+
+Enhanced Form Elements
+Bootstrap 4’s form elements are known to default to the view provided by the browser. However, Bootstrap 5’s form elements come with a custom design that ensures a consistent look and feel on all browsers. It also introduces new form controls based on standard and semantic form controls. This ensures that developers don’t have to add extra markups for the form controls.
+<br>
+
+Q6.What is a Button Group, and what is the class for a basic Button Group? <br> 
+
+ANS=Bootstrap allows you to group a series of buttons together (on a single line) in a button group:
+
+Use a <div> element with class .btn-group to create a button group:
+
+Example
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <button type="button" class="btn btn-primary">Sony</button>
+</div>
+<br>
+
+Q7.How can you use Bootstrap to make thumbnails? <br>
+
+ANS=Include Bootstrap and jQuery CDN into the tag of your HTML document.
+Add a tag with the class of .row to create a grid layout.
+Add four tags with the classes of .col-sm-6 and .col-md-3 to make the layout responsive.
+Add an tag with the class of .thumbnail around an tag to create a thumbnail with padding and a border.
+Optionally, add any HTML content like headings, paragraphs, or buttons into the thumbnails.
+<br>
+
+Q8.In Bootstrap 4, what is flexbox?<br>
+
+ANS=The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. <br>
+
+Q9.How can one create an alert in Bootstrap?<br>
+ANS=Alerts are created with the .alert class, followed by one of the four contextual classes .alert-success, .alert-info, .alert-warning or .alert-danger:
+
+Example
+<div class="alert alert-success">
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert alert-info">
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert alert-warning">
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+
+<div class="alert alert-danger">
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+<br>
+
+Q10.What is a bootstrap card and how would you create one?
+<br>
+ANS=A card in Bootstrap 4 is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.
+<div class="card" style="width:400px">
+    <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text.</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+
+  <br>
+
+  
+
+</body>
+</html>

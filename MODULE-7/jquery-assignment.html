@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Q1.What is jQuery? <br>
+    ANS=jQuery is a lightweight, "write less, do more", JavaScript library. The purpose of jQuery is to make it much easier to use JavaScript on your website. <br>
+
+    Q2.How to Apply CSS Using JQuery, How to Add Class and Remove Class in 
+    Jquery, JQuery Animation?
+ANS=
+The syntax for adding CSS classes to an element:
+
+$('selector').addClass(class_name);
+
+The syntax for Removing CSS classes to an element:
+
+$('selector').removeClass(class_name);
+
+Q3.How to create slider with animation?
+ANS= 
+<head> 
+	<script src="https://ajax.googleapis.com/ajax/ 
+				libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+	<style type="text/css"> 
+		div { 
+			width: 100px; 
+			height: 100px; 
+			background-color: green; 
+		} 
+	</style> 
+</head> 
+	
+<body> 
+	<div></div> 
+	<br/> 
+	<button id="animate">Animate Me</button> 
+	<script type="text/javascript"> 
+		$("#animate").click(function() { 
+			$("div").animate({ 
+					width: "200px", 
+					height: "200px", 
+					borderRadius: "50%", 
+					marginLeft: "210px", 
+					marginTop: "70px", 
+				}, 
+				2000, 
+			); 
+		}); 
+	</script> 
+</body>  
+<br>
+
+
+</body>
+</html>

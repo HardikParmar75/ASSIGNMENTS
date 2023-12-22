@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv{
+            border: 2px solid ;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>Maths Operations</h1>
+        <p>Enter 1st number: <input type="text" id="val1"></p>
+        <p>Enter 1st number: <input type="text" id="val2"></p>
+        <button id="plus">+</button>
+        <button id="neg">-</button>
+        <button id="mul">*</button>
+        <button id="divi">/</button>
+        <button id="modu">%</button>
+        <h3>Answer is: <b id="res"></b></h3>
+    </div>
+
+    <script>
+        var a = document.getElementById('val1');
+        var b = document.getElementById('val2');
+        var c = document.getElementById('res');
+
+         document.getElementById('plus').addEventListener('click',function (){
+             c.innerHTML = parseFloat(a.value) + parseFloat(b.value);
+         });
+        
+         document.getElementById('neg').addEventListener('click',function (){
+            c.innerHTML = parseFloat(a.value) - parseFloat(b.value);
+         });
+
+         document.getElementById('mul').addEventListener('click',function (){
+            c.innerHTML = parseFloat(a.value) * parseFloat(b.value);
+         });
+
+         document.getElementById('divi').addEventListener('click',function (){
+            c.innerHTML = parseFloat(a.value) / parseFloat(b.value);
+         });
+
+         document.getElementById('modu').addEventListener('click',function (){
+            c.innerHTML = parseFloat(a.value) % parseFloat(b.value);
+         });
+    </script>
+</body>
+</html>

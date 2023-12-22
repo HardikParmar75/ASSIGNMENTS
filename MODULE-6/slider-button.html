@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+        }
+        .main{
+            overflow: hidden;
+            position: relative;
+        }
+        .btn1{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            background: transparent;
+            color: white;
+            box-shadow: 0 0 10px #fff;
+            text-decoration: none;
+            border: none;
+        }
+        .btn2{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            height: 50px;
+            width: 50px;
+            font-size: 25px;
+            background: transparent;
+            color: white;
+            box-shadow: 0 0 10px #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" id="img">
+        <button class="btn1" onclick="slide2()"><</button>
+        <img src="i1.jpg" alt="" id="i1" height="400px">
+        <img src="i3.jpg" alt="" height="400px">
+        <img src="i4.jpg" alt="" height="400px">
+        <button class="btn2" onclick="slide()">></button>
+    </div>
+    <script>
+        imgs = document.getElementsByTagName('img');
+        index=0;
+       function slider(){
+        for(i=0;i<imgs.length;i++){
+            imgs[i].style.display="none";
+        }
+        imgs[index].style.display="block";
+        index++;
+        if(index==3){
+                index=0;
+            }
+             //setTimeout("slider()",1000)
+        }
+        slider();
+        img1 = document.querySelector('#i1');
+        function slide()
+           {
+                if( img1.src.match("i1.jpg"))
+                {
+                    img1.src ="i2.jpg"
+                }
+
+                else if(img1.src.match("i2.jpg"))
+                {
+                    img1.src ="i3.jpg"
+                }
+
+                else 
+                {
+                    img1.src ="i1.jpg"
+                }
+           }
+
+           function slide2()
+           {
+                if( img1.src.match("i3.jpg"))
+                {
+                    img1.src ="i2.jpg"
+                }
+
+                else if(img1.src.match("i2.jpg"))
+                {
+                    img1.src ="i1.jpg"
+                }
+                
+                else 
+                {
+                    img1.src ="i3.jpg"
+                }
+           }
+    </script>
+</body>
+</html>

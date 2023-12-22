@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maindiv
+        {
+            border: 2px solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>Enter Marks</h1>
+        <p>1.C language: <input type="text" id="p1"></p>
+        <p>2.C++ language: <input type="text" id="p2"></p>
+        <p>3.Database: <input type="text" id="p3"></p>
+        <p>4.Html: <input type="text" id="p4"></p>
+        <p>5.Css: <input type="text" id="p5"></p>
+        <p>6.php: <input type="text" id="p6"></p>
+        <p>7.Core java: <input type="text" id="p7"></p>
+        <button id="res">Result</button>
+        <h4>Total is: <b id="total"></b>/350</h4>
+        <h4>Percentage is: <b id="per"></b>%</h4>
+    </div>
+
+    <script>
+        var a = document.getElementById('p1');
+        var b = document.getElementById('p2');
+        var c = document.getElementById('p3');
+        var d = document.getElementById('p4');
+        var e = document.getElementById('p5');
+        var f = document.getElementById('p6');
+        var g = document.getElementById('p7');
+        var total1 = document.getElementById('total');
+        var per1 = document.getElementById('per');
+
+        document.getElementById('res').addEventListener('click',function() {
+            total1.innerHTML = parseFloat(a.value) + parseFloat(b.value) + parseFloat(c.value) + parseFloat(d.value) +
+            parseFloat(e.value) +
+            parseFloat(f.value) +
+            parseFloat(g.value)
+        });
+
+        document.getElementById('res').addEventListener('click',function() {
+            per1.innerHTML = parseFloat(total1.innerHTML) * (100) / (350);
+        });
+    </script>
+</body>
+</html>
